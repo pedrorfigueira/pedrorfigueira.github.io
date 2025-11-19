@@ -1,0 +1,99 @@
+/* ---------------------------
+   BASE STYLES
+----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* ---------------------------
+   HERO / HEADER
+----------------------------*/
+.hero {
+  background: #1e1e1e;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* ---------------------------
+   MAIN SECTIONS
+----------------------------*/
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section.alt {
+  background: #f0f0f0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------------------------
+   GRID LAYOUT
+----------------------------*/
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.section-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-grid.reverse {
+  direction: rtl;
+}
+
+.section-grid.reverse > * {
+  direction: ltr;
+}
+
+/* ---------------------------
+   FOOTER
+----------------------------*/
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1e1e1e;
+  color: white;
+  margin-top: 4rem;
+}
+
+/* ---------------------------
+   RESPONSIVE
+----------------------------*/
+@media (max-width: 800px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
